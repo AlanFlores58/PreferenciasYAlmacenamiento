@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Datos de la cuenta">
+        <EditTextPreference
+            android:key="usuario"
+            android:summary="Ingresio el nombre de usuario"
+            android:title="Nombre"/>
+
+        <EditTextPreference
+            android:key="Contrasena"
+            android:summary="Ingrese la comtraseña"
+            android:title="contraseñna"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Datos de interes">
+        <ListPreference
+            android:dialogTitle="Selecciona una opcion"
+            android:entries="@array/opciones_simple"
+            android:entryValues="@array/opciones_simple"
+            android:key="single_choice"
+            android:summary="Cuantos cursos te gustaria tomar con nosotros"/>
+
+        <MultiSelectListPreference
+            android:dialogTitle="Sistemas operativos"
+            android:entries="@array/opciones_multiple"
+            android:entryValues="@array/opciones_multiple"
+            android:key="multi_choice"
+            android:summary="SO moviles favoritos"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
